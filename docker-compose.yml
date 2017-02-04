@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  backup:
+    build:
+        context: .
+    volumes:
+        - ../:/etc/hostdocker
+    env_file: .env
+
